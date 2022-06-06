@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace CaseStudyHotel.Models
+{
+    public class SerachRooms
+    {
+       
+
+        public string check_IN_DATE { get; set; }
+
+        public string Check_OUT_DATE { get; set; }
+
+        public int Rooms_Available { get; set; }
+
+        public string RoomType { get; set; }
+
+    }
+}
