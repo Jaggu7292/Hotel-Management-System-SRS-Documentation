@@ -1,0 +1,17 @@
+create table SearchRooms
+(
+check_IN_DATE Date,
+Check_OUT_DATE Date,
+Rooms_Available int,
+RoomType varchar(50)
+)
+
+insert into SearchRooms values('2022-07-30','2022-08-10',10,'SingleRooms')
+insert into SearchRooms values('2022-06-15','2022-08-20',10,'SingleRooms')
+insert into SearchRooms values('2022-05-25','2022-05-30',5,'CoupleRooms')
+insert into SearchRooms values('2022-07-10','2022-08-30',10,'SuitRooms')
+
+Select * from SearchRooms
+
+
+select SUM(Rooms_Available) AS Rooms_Available from SearchRooms where (check_IN_DATE BETWEEN '2022-06-15'AND '2022-07-30')AND RoomType = 'SingleRooms'
